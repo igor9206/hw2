@@ -1,5 +1,5 @@
 fun main() {
-    val buy = 101
+    val buy = 10001
     val regularCustomer = true
 
     if (buy > 0 && buy <= 1000) {
@@ -17,7 +17,7 @@ fun main() {
 }
 
 fun regularDiscount(buy: Int): Int {
-    val result = buy - (buy * 1 / 100)
+    val result = buy * 99 / 100
     println("после применения 1% скидки — $result рубля.")
     return result
 }
